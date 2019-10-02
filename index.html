@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock, Paper, Scissors</title>
+</head>
+
+<body>
+    <header class="title">
+        <h1>Rock Paper Scissors</h1>
+        <h3>Play Against the Computer</h3>
+    </header>
+    <section class="rules">
+        <h2>You Know the Rules</h2>
+        <img src="https://www.resolve.edu.au/sites/default/files/Rock%20Paper%20Scissors.png" alt="rock beats scissors, scissors beats paper, paper beats rock">
+    </section>
+    <section class="weapon-selection">
+        <h3>Select Your Weapon</h3>
+        <form>
+            <label for="user-play">Rock <input type="radio" name="user-play" value="rock"></label>
+        </form>
+        <form>
+            <label for="user-play">Paper <input type="radio" name="user-play" value="paper"></label>
+        </form>
+        <form>
+            <label for="user-play">Scissors <input type="radio" name="user-play" value="scissors"></label>
+        </form> 
+        <h3>Rock...Paper...Scissors...</h3>   
+        <button>Shoot!</button>
+    </section>
+    <section class="results">
+        You: <span id="user-input"></span> Computer: <span id="computer-play"></span> <br>
+        <h2><span id="winner"></span>wins!</h2> 
+    </section>
+    <section class="score-board">
+        <h3>You: </h3>
+        <h3>Computer: </h3>
+    </section>
+    <section class="options">
+        <button id="next-round">Next Round</button>
+        <button id="start-over">Start Over</button>
+    </section>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
