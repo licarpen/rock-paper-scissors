@@ -2,13 +2,13 @@ import { generateRandomNumber, getThrowFromNumber, getWinner } from './utilities
 
 // get DOM elements
 
-const userInput = document.getElementById("user-input");
-const computer = document.getElementById("computer-play");
-const winner = document.getElementById("winner");
-const playaRound = document.getElementById("play-round");
-const userScoreBoard = document.getElementById("user-score");
-const computerScoreBoard = document.getElementById("computer-score");
-const startOver = document.getElementById("start-over");
+const userInput = document.getElementById('user-input');
+const computer = document.getElementById('computer-play');
+const winner = document.getElementById('winner');
+const playaRound = document.getElementById('play-round');
+const userScoreBoard = document.getElementById('user-score');
+const computerScoreBoard = document.getElementById('computer-score');
+const startOver = document.getElementById('start-over');
 
 // initialize DOM state
 
@@ -33,12 +33,9 @@ const resetGame = () => {
 
 const playRound = () => {
     let randomNumber = generateRandomNumber();
-    console.log(randomNumber);
     computerPlay = getThrowFromNumber(randomNumber);
     selectedRadioButton = document.querySelector('input:checked');
-    console.log(selectedRadioButton);
     userSelection = selectedRadioButton.value;
-    console.log(userSelection);
     champion = getWinner(userSelection, computerPlay);
     updateSpans();  
 };
