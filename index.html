@@ -32,7 +32,7 @@
         <h3>Rock...Paper...Scissors...</h3>   
         <button>Shoot!</button>
     </section>
-    <section class="results">
+    <section class="toggle-visibility" class="results" >
         You: <span id="user-input"></span> Computer: <span id="computer-play"></span> <br>
         <h2><span id="winner"></span>wins!</h2> 
     </section>
@@ -41,11 +41,12 @@
         <h3>Computer: </h3>
     </section>
     <section class="options">
-        <button id="next-round">Next Round</button>
-        <button id="start-over">Start Over</button>
+        <button id="next-round" class="toggle-visibility">Next Round</button>
+        <button id="start-over" class="toggle-visibility">Start Over</button>
     </section>
 
     <script type="module" src="app.js"></script>
+    <script type="module" src="utilities.js"></script>
 </body>
 
 </html>
