@@ -20,25 +20,20 @@
     </section>
     <section class="weapon-selection">
         <h3>Select Your Weapon</h3>
-        <form>
             <label for="user-play">Rock <input type="radio" name="user-play" value="rock"></label>
-        </form>
-        <form>
             <label for="user-play">Paper <input type="radio" name="user-play" value="paper"></label>
-        </form>
-        <form>
             <label for="user-play">Scissors <input type="radio" name="user-play" value="scissors"></label>
-        </form> 
         <h3>Rock...Paper...Scissors...</h3>   
-        <button>Shoot!</button>
+        <button id="play-round">Shoot!</button>
     </section>
     <section class="toggle-visibility" class="results" >
-        You: <span id="user-input"></span> Computer: <span id="computer-play"></span> <br>
-        <h2><span id="winner"></span>wins!</h2> 
+        <span id="user-input"></span><span id="computer-play"></span> <br>
+        <h1><span id="winner"></span></h1> 
     </section>
     <section class="score-board">
-        <h3>You: </h3>
-        <h3>Computer: </h3>
+        <h3>Score Board</h3>
+        <h4>You: <span id="user-score">0</span></h4>
+        <h4>Computer: <span id="computer-score">0</span></h4>
     </section>
     <section class="options">
         <button id="next-round" class="toggle-visibility">Next Round</button>
