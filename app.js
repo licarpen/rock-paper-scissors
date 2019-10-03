@@ -17,7 +17,7 @@ let computerScore = 0;
 let computerPlay;
 let userSelection;
 let champion;
-let selectedRadioButton;
+let selectedRadioButton = document.querySelector('input:checked');
 
 // change DOM state and elements based on game play
 
