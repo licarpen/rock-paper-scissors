@@ -23,3 +23,4 @@ export const getWinner = (userPlay, computerPlay) => {
     else
         return 'Computer';
 };
+
