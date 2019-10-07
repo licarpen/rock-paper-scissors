@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock, Paper, Scissors</title>
+</head>
+
+<body>
+    <header class="title">
+        <h1>Rock Paper Scissors</h1>
+        <h3>Play Against the Computer</h3>
+    </header>
+    <section class="rules">
+        <h2>You Know the Rules</h2>
+        <img src="./images/rules.png" alt="rock beats scissors, scissors beats paper, paper beats rock">
+    </section>
+    <section class="weapon-selection">
+        <h3>Select Your Weapon</h3>
+            <label>
+                <input type="radio" name="user-play" value="rock" class="hidden" checked><img src="./images/rock.jpg" height="150px" alt="rock" class="weapon">
+            </label>
+            <label>
+                <input type="radio" name="user-play" value="paper" class="hidden"><img src="./images/paper.jpg" alt="paper" height="150px" class="weapon">  
+            </label>
+            <label>
+                <input type="radio" name="user-play" value="scissors" class="hidden"><img src="./images/scissors.png" alt="scissors" height="150px" class="weapon">  
+            </label>
+        <h3>Rock...Paper...Scissors...</h3>   
+        <button id="play-round">Shoot!</button>
+    </section>
+    <section class="toggle-visibility" class="results" >
+        <span id="user-input"></span><span id="computer-play"></span> <br>
+        <h1><span id="winner"></span></h1> 
+    </section>
+    <section class="score-board">
+        <h3>Score Board</h3>
+        <h4>You: <span id="user-score">0</span></h4>
+        <h4>Computer: <span id="computer-score">0</span></h4>
+    </section>
+    <section class="options">
+        <button id="start-over" class="toggle-visibility">Start Over</button>
+    </section>
+
+    <script type="module" src="app.js"></script>
+    <script type="module" src="utilities.js"></script>
+</body>
+
+</html>
